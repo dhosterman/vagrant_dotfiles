@@ -4,7 +4,7 @@
 [color]
 	ui = true
 [credential]
-	helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+	helper = cache --timeout 86400
 [push]
 	default = simple
 [github]
