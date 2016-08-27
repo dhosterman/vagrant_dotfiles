@@ -120,3 +120,7 @@ fi
  export PYENV_ROOT="$HOME/.pyenv"
  export PATH="$PYENV_ROOT/bin:$PATH"
  eval "$(pyenv init -)"
+
+ # Tell the shell where virtualenvs live
+ mkdir $HOME/.virtualenvs
+ export WORKON_HOME="$HOME/.virtualenvs"
