@@ -1,2 +1,5 @@
+#!/bin/sh
+this_dir = "$(dirname "$0")"
+
 # install python versions using pyenv
-source ./python_versions
+source $this_dir/python_versions
