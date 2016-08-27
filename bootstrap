@@ -7,5 +7,5 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 . "$DIR/python_versions"
 
 # create symlinks for dotfiles
-ln -sv $DIR/.spacemacs $HOME/.spacemacs
-ln -sv $DIR/.bashrc $HOME/.bashrc
+ln -svf $DIR/.spacemacs $HOME/.spacemacs
+ln -svf $DIR/.bashrc $HOME/.bashrc
