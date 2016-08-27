@@ -8,3 +8,4 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 # create symlinks for dotfiles
 ln -sv $DIR/.spacemacs $HOME/.spacemacs
+ln -sv $DIR/.bashrc $HOME/.bashrc
