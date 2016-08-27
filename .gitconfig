@@ -1,0 +1,15 @@
+[user]
+	name = Daniel Hosterman
+	email = daniel.hosterman@gmail.com
+[color]
+	ui = true
+[credential]
+	helper = gnome-keyring
+[push]
+	default = simple
+[github]
+	user = dhosterman
+[web]
+	browser = open
+[core]
+	excludesfile = ~/.gitignore_global

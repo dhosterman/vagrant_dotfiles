@@ -9,3 +9,5 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
 ln -svf $DIR/.bashrc $HOME/.bashrc
+ln -svf $DIR/.gitconfig $HOME/.gitconfig
+ln -svf $DIR/.gitignore_global $HOME/.gitignore_global
