@@ -125,5 +125,6 @@ fi
  mkdir $HOME/.virtualenvs
  export WORKON_HOME="$HOME/.virtualenvs"
 
- # Establish Gopath
+ # Go and Gopath
  export PATH=$PATH:/usr/local/go/bin
+ export GOPATH=$HOME/dev
