@@ -29,6 +29,7 @@ values."
      eyebrowse
      git
      github
+     go
      markdown
      python
      restclient
