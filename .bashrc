@@ -124,3 +124,6 @@ fi
  # Tell the shell where virtualenvs live
  mkdir $HOME/.virtualenvs
  export WORKON_HOME="$HOME/.virtualenvs"
+
+ # Establish Gopath
+ export PATH=$PATH:/usr/local/go/bin
