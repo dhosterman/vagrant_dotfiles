@@ -122,9 +122,12 @@ fi
  eval "$(pyenv init -)"
 
  # Tell the shell where virtualenvs live
- mkdir $HOME/.virtualenvs
+ mkdir -p $HOME/.virtualenvs
  export WORKON_HOME="$HOME/.virtualenvs"
 
  # Go and Gopath
  export PATH=$PATH:/usr/local/go/bin
  export GOPATH=$HOME/dev
+ 
+ # Enable UTF-8
+ export LC_ALL="en_US.UTF-8"
