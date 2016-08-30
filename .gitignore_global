@@ -1,3 +1,5 @@
 .byebug_history
 .vimrc
+.cache
+__pycache__
 

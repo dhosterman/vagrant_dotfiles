@@ -31,7 +31,9 @@ values."
      github
      go
      markdown
-     python
+     (python :variables
+             python-test-runner 'pytest
+             python-enable-yapf-format-on-save t)
      restclient
      (shell :variables
             shell-default-height 20
