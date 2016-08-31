@@ -2,4 +2,6 @@
 .vimrc
 .cache
 __pycache__
+*.pex
+*.egg-info
 
