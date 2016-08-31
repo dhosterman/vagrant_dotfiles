@@ -11,3 +11,9 @@ ln -svf $DIR/.spacemacs $HOME/.spacemacs
 ln -svf $DIR/.bashrc $HOME/.bashrc
 ln -svf $DIR/.gitconfig $HOME/.gitconfig
 ln -svf $DIR/.gitignore_global $HOME/.gitignore_global
+
+# fetch Spacemacs Go layer requirements
+go get -u -v github.com/nsf/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u -v golang.org/x/tools/cmd/oracle
+go get -u -v golang.org/x/tools/cmd/gorename
