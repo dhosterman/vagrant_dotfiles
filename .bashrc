@@ -126,7 +126,7 @@ fi
  export WORKON_HOME="$HOME/.virtualenvs"
 
  # Go and Gopath
- export PATH=$PATH:/usr/local/go/bin
+ export PATH=$PATH:/usr/local/go/bin:$HOME/dev/bin
  export GOPATH=$HOME/dev
  
  # Enable UTF-8
