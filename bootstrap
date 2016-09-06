@@ -6,6 +6,12 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 # install python versions using pyenv
 . "$DIR/python_versions"
 
+# set default python version
+pyenv global 3.5.2
+
+# install virtualenvwrapper globally
+pip install virtualenvwrapper
+
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
 ln -svf $DIR/.bashrc $HOME/.bashrc
