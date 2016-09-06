@@ -15,6 +15,9 @@ pip install --upgrade pip
 # install virtualenvwrapper globally
 pip install virtualenvwrapper
 
+# install cookiecutter
+pip install cookiecutter
+
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
 ln -svf $DIR/.bashrc $HOME/.bashrc
