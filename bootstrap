@@ -6,6 +6,10 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 # install python versions using pyenv
 . "$DIR/python_versions"
 
+# fetch global Python packages
+export PYENV_VERSION=3.5.2
+pip install cookiecutter
+
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
 ln -svf $DIR/.bashrc $HOME/.bashrc
