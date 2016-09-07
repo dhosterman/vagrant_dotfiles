@@ -6,8 +6,18 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 # install python versions using pyenv
 . "$DIR/python_versions"
 
-# we need to source bashrc here to get access to our commands
-source $DIR/.bashrc
+# Pyenv path, shims, and autocompletion
+ export PYENV_ROOT="$HOME/.pyenv"
+ export PATH="$PYENV_ROOT/bin:$PATH"
+ eval "$(pyenv init -)"
+
+ # Tell the shell where virtualenvs live
+ mkdir -p $HOME/.virtualenvs
+ export WORKON_HOME="$HOME/.virtualenvs"
+
+ # Go and Gopath
+ export PATH=$PATH:/usr/local/go/bin:$HOME/dev/bin
+ export GOPATH=$HOME/dev
 
 # set default python version
 pyenv global 3.5.2
