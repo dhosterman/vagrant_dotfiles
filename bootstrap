@@ -6,8 +6,16 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 # install python versions using pyenv
 . "$DIR/python_versions"
 
-# fetch global Python packages
-export PYENV_VERSION=3.5.2
+# set default python version
+pyenv global 3.5.2
+
+# upgrade pip
+pip install --upgrade pip
+
+# install virtualenvwrapper globally
+pip install virtualenvwrapper
+
+# install cookiecutter
 pip install cookiecutter
 
 # create symlinks for dotfiles
