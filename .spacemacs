@@ -33,7 +33,8 @@ values."
      markdown
      (python :variables
              python-test-runner 'pytest
-             python-enable-yapf-format-on-save t)
+             python-enable-yapf-format-on-save t
+             pytest-cmd-flags "--color no")
      restclient
      (shell :variables
             shell-default-height 20
@@ -202,7 +203,7 @@ values."
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
    dotspacemacs-inactive-transparency 90
    ;; If non nil unicode symbols are displayed in the mode line. (default t)
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters the
    ;; point when it reaches the top or bottom of the screen. (default t)
