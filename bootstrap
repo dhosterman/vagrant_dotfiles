@@ -6,6 +6,9 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 # install python versions using pyenv
 . "$DIR/python_versions"
 
+# we need to source bashrc here to get access to our commands
+source $DIR/.bashrc
+
 # set default python version
 pyenv global 3.5.2
 
