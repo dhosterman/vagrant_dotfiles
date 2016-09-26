@@ -116,21 +116,19 @@ if ! shopt -oq posix; then
     fi
 fi
 
-# Pyenv path, shims, and autocompletion
- export PYENV_ROOT="$HOME/.pyenv"
- export PATH="$PYENV_ROOT/bin:$PATH"
- eval "$(pyenv init -)"
+# Enable pew environment name display in shell
+source $(pew shell_config)
 
- # Tell the shell where virtualenvs live
- mkdir -p $HOME/.virtualenvs
- export WORKON_HOME="$HOME/.virtualenvs"
+# Tell the shell where virtualenvs live
+mkdir -p $HOME/.virtualenvs
+export WORKON_HOME="$HOME/.virtualenvs"
 
- # Go and Gopath
- export PATH=$PATH:/usr/local/go/bin:$HOME/dev/bin
- export GOPATH=$HOME/dev
- 
- # Enable UTF-8
- export LC_ALL="en_US.UTF-8"
- 
- # Enable colors
- export TERM="xterm-256color"
+# Go and Gopath
+export PATH=$PATH:/usr/local/go/bin:$HOME/dev/bin
+export GOPATH=$HOME/dev
+
+# Enable UTF-8
+export LC_ALL="en_US.UTF-8"
+
+# Enable colors
+export TERM="xterm-256color"
