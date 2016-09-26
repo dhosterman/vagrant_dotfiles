@@ -29,8 +29,8 @@ pip install --upgrade pip
 sudo pip install pew
 
 # install python versions using pew
-pew install 3.5.2
-pew install 2.7.12
+pew install 3.5.2 > /dev/null 2>&1
+pew install 2.7.12 > /dev/null 2>&1
 
 # install cookiecutter
 pip install cookiecutter
