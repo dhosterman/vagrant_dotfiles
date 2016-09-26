@@ -3,14 +3,6 @@
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
-# # install python versions using pyenv
-# . "$DIR/python_versions"
-
-# # Pyenv path, shims, and autocompletion
-#  export PYENV_ROOT="$HOME/.pyenv"
-#  export PATH="$PYENV_ROOT/bin:$PATH"
-#  eval "$(pyenv init -)"
-
  # Tell the shell where virtualenvs live
  mkdir -p $HOME/.virtualenvs
  export WORKON_HOME="$HOME/.virtualenvs"
