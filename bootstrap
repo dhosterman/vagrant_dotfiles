@@ -27,7 +27,7 @@ pew install 2.7.12 > /dev/null 2>&1
 
 # install cookiecutter
 echo "Installing cookiecutter..."
-pip install cookiecutter > /dev/null 2>&1
+sudo pip install cookiecutter > /dev/null 2>&1
 
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
