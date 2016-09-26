@@ -26,7 +26,7 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 pip install --upgrade pip
 
 # install pew
-pip install pew
+sudo pip install pew
 
 # install python versions using pew
 pew install 3.5.2
