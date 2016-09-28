@@ -11,14 +11,13 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
  export PATH=$PATH:/usr/local/go/bin:$HOME/dev/bin
  export GOPATH=$HOME/dev
 
-# set default python version
-#pyenv global 3.5.2 2.7.12
-
 # upgrade pip
-pip install --upgrade pip
+echo "Upgrading Pip..."
+pip install --upgrade pip > /dev/null 2>&1
 
 # install pew
-sudo pip install pew
+echo "Installing pew..."
+sudo pip install pew > /dev/null 2>&1
 
 # install python versions using pew
 echo "Installing Python 3.5.2..."
@@ -36,7 +35,8 @@ pew install 2.6.9 > /dev/null 2>&1
 sudo ln -s $(pew locate_python 2.6.9) /usr/local/bin/python2.6
 
 # install cookiecutter
-pip install cookiecutter
+echo "Installing cookiecutter..."
+sudo pip install cookiecutter > /dev/null 2>&1
 
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
