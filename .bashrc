@@ -132,3 +132,6 @@ export LC_ALL="en_US.UTF-8"
 
 # Enable colors
 export TERM="xterm-256color"
+
+# added by travis gem
+[ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
