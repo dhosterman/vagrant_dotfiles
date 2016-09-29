@@ -34,7 +34,7 @@ values."
      (python :variables
              python-test-runner 'pytest
              python-enable-yapf-format-on-save t
-             pytest-cmd-flags "--color no --ignore=setup.py --doctest-modules")
+             pytest-cmd-flags "--color no")
      restclient
      (shell :variables
             shell-default-height 20
