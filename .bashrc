@@ -116,8 +116,8 @@ if ! shopt -oq posix; then
     fi
 fi
 
-# Enable pew environment name display in shell
-source $(pew shell_config)
+# Simplify prompt
+export PS1="\w\\$ "
 
 # Tell the shell where virtualenvs live
 mkdir -p $HOME/.virtualenvs
@@ -135,3 +135,9 @@ export TERM="xterm-256color"
 
 # added by travis gem
 [ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
+
+# Enable pew environment name display in shell
+if [ -n "$VIRTUAL_ENV" ]; then
+    PREFIX="[$(basename $VIRTUAL_ENV)]"
+    PS1="\[\033[01;34m\]\$PREFIX \e[0m$PS1"
+fi
