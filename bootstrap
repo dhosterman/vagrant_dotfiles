@@ -40,10 +40,10 @@ sudo pip install cookiecutter > /dev/null 2>&1
 
 # install ruby
 echo "Installing Ruby..."
-sudo apt install ruby > /dev/null 2>&1
-sudo apt install ruby-dev > /dev/null 2>&1
+sudo apt-get -y install ruby > /dev/null 2>&1
+sudo apt-get -y install ruby-dev > /dev/null 2>&1
 echo "Installing Travis CLI tool..."
-sudo gem install travis
+sudo gem install travis > /dev/null 2>&1
 
 # create symlinks for dotfiles
 ln -svf $DIR/.spacemacs $HOME/.spacemacs
