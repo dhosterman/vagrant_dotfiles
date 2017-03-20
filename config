@@ -1,5 +1,0 @@
-Host github.com
-User dhosterman
-IdentityFile ~/.ssh/id_rsa_dhosterman_github
-KeepAlive yes
-ServerAliveInterval 60
